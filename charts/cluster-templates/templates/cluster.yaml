@@ -327,6 +327,9 @@ spec:
         {{- if .Values.cluster.config.controlPlaneConfig.kubelet_arg }}
         kubelet-arg: {{ .Values.cluster.config.controlPlaneConfig.kubelet_arg | toRawJson }}
         {{- end }}
+        {{- if .Values.cluster.config.controlPlaneConfig.embedded_registry }}
+        embedded-registry: {{ .Values.cluster.config.controlPlaneConfig.embedded_registry }}
+        {{- end }}
       machineLabelSelector:
         matchLabels:
           node-role.kubernetes.io/control-plane: true

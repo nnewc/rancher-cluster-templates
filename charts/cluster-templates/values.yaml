@@ -62,7 +62,8 @@ cluster:
         # - kube proxy arguments here (https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy)
       # kubelet_arg:
         # - kubelet arguments here (https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet)
-    # controlPlaneConfig:
+    controlPlaneConfig:
+      embedded-registry: false
       # same options as globalConfig
       # only will apply to the control plane nodes
     # workerConfig:
