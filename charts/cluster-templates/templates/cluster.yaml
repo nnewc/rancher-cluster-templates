@@ -365,7 +365,7 @@ spec:
         {{- end }}
       machineLabelSelector:
         matchLabels:
-          rke.cattle.io/worker-role: true
+          rke.cattle.io/worker-role: "true"
       {{- end }}
     {{- end }}
     {{- end }}
